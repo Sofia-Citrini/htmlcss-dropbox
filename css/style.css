@@ -22,6 +22,21 @@ h1 {
     padding-bottom: 50px;
 }
 
+h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+.padding-30 {
+    padding: 30px 0;
+}
+
+/* nav */
 .navbar {
     display: flex;
     padding: 15px;
@@ -56,6 +71,13 @@ h1 {
     padding: 10px;
     background-color: var(--color-blue);
     color: #ffffff;
+}
+
+/* main */
+.container {
+    width: 920px;
+    margin: auto;
+    padding: 100px;
 }
 
 .container-large {
@@ -98,4 +120,74 @@ h1 {
 .jumbotron-img img {
     display: block;
     width: 100%;
+}
+
+/* griglia a 3 elementi */
+.grid-plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+.plan {
+    flex-basis: 30%;
+    border: 1px solid #D3D3D6;
+}
+
+.plan-header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #D3D3D6;
+    font-size: 14px;
+}
+
+.plan-body {
+    padding: 30px 20px;
+}
+
+.plan-body .text {
+    color: #98979A;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.plan-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.plan-list li {
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 11px;
+}
+
+.plan-list i {
+    position: absolute;
+    left: -20px;
+    font-size: 13px;
+}
+
+.line {
+    border: 1px solid #D3D3D6;
+    width: 20%;
+    height: 1%;
+}
+
+.plan-large{
+    border: 1px solid #D3D3D6;
+}
+
+.plan-large .plan-body {
+    display: flex;
+    font-size: 13px;
+}
+
+.plan-body .description {
+    flex-basis: 70%;
+}
+
+.plan-body .contact {
+    flex-basis:30%;
+    text-align: end;
 }
