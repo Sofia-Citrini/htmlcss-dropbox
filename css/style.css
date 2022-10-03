@@ -31,6 +31,10 @@ h3 {
     font-size: 20px;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
 
 .padding-30 {
     padding: 30px 0;
@@ -45,12 +49,6 @@ h3 {
 .nav-logo {
     width: 100px;
     padding: 10px;
-}
-
-.nav-logo img {
-    width: 100%;
-    display: block;
-    object-fit: contain;
 }
 
 .nav-link li {
@@ -116,11 +114,6 @@ h3 {
 
 .jumbotron-img {
     flex-basis: 60%;
-}
-
-.jumbotron-img img {
-    display: block;
-    width: 100%;
 }
 
 /* griglia a 3 elementi */
@@ -203,14 +196,22 @@ h3 {
     flex-basis: 60%;
 }
 
-.col-img img {
-    display: block;
-    width: 100%;
-}
-
 .col-text {
     flex-basis: 40%;
     padding-top: 40px;
     padding-left: 30px;
     font-size: 13px;
+}
+
+/* sezione4 */
+.grid-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 30%;
+    font-size: 13px;
+    padding: 30px 0;
 }
