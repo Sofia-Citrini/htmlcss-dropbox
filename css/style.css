@@ -215,3 +215,13 @@ img {
     font-size: 13px;
     padding: 30px 0;
 }
+
+/* sezione6  */
+.col-title {
+    flex-basis: 50%;
+}
+
+.col-button {
+    flex-basis: 50%;
+    text-align: end;
+}
