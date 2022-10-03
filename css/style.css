@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -77,12 +77,13 @@ h3 {
 .container {
     width: 920px;
     margin: auto;
-    padding: 100px;
+    padding: 50px;
 }
 
 .container-large {
     width: 1100px;
     margin: auto;
+    margin-bottom: 50px;
     position: relative;
     top: 50px;
 }
@@ -132,6 +133,7 @@ h3 {
 .plan {
     flex-basis: 30%;
     border: 1px solid #D3D3D6;
+    font-size: 13px;
 }
 
 .plan-header {
@@ -190,4 +192,25 @@ h3 {
 .plan-body .contact {
     flex-basis:30%;
     text-align: end;
+}
+
+/* sezione3 */
+.row {
+    display: flex;
+}
+
+.col-img {
+    flex-basis: 60%;
+}
+
+.col-img img {
+    display: block;
+    width: 100%;
+}
+
+.col-text {
+    flex-basis: 40%;
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 13px;
 }
