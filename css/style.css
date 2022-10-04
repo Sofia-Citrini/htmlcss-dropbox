@@ -208,7 +208,6 @@ main .container-large {
 .line {
     border: 1px solid #D3D3D6;
     width: 20%;
-    height: 1%;
 }
 
 .plan-large{
@@ -239,6 +238,65 @@ main .container-large {
 
 .card {
     font-size: 13px;
+}
+
+/* sezione6 */
+.grid-company {
+    flex-wrap: wrap;
+}
+
+.grid-company div{
+    width: 50%;
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+}
+
+.box-green {
+    background-color: #A2D39B;
+    border: 10px solid #CFE8CC;
+}
+
+.box-brown {
+    background-color: #61082B;
+}
+
+.box-blue {
+    background-color: #0093CE;
+}
+
+.box-red {
+    background-color: #FF1C1C;
+}
+
+.box-bordeaux {
+    background-color: #D50020;
+}
+
+.box-lightblue {
+    background-color: var(--color-secondary);
+}
+
+.box-nightblue{
+    background-color: #0D2381;
+}
+
+.box-yellow {
+    background-color: #FFD830;
+}
+
+.grid-company div img {
+    filter: invert(1);
+    width: 50%;
+}
+
+.designt-company {
+    padding: 25px;
+    font-size: 13px;
+    background-color: #D3D3D6;
+}
+.designt-company img {
+    width: 150px;
+    padding-bottom: 30px;
 }
 
 /* sezione7  */
