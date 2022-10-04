@@ -1,5 +1,6 @@
 :root {
-    --color-blue: #0061ff;
+    --color-primary: #0061ff;
+    --color-secondary: #B4D0E7;
 }
 * {
     margin: 0;
@@ -11,16 +12,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+nav {
+    display: flex;
+    justify-content: space-between;
     background-color: #ffffff;
     position: fixed;
     width: 100%;
     z-index: 10;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 footer {
@@ -40,11 +39,32 @@ h2 {
 
 h3 {
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
-img {
+.block-img {
     display: block;
     width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.col-30{
+    flex-basis: 30%;
+}
+
+.col-70{
+    flex-basis: 70%;
+}
+
+.col-40{
+    flex-basis: 40%;
+}
+
+.col-60{
+    flex-basis: 60%;
 }
 
 .padding-30 {
@@ -53,7 +73,6 @@ img {
 
 /* nav */
 .navbar {
-    display: flex;
     padding: 15px;
 }
 
@@ -78,7 +97,7 @@ img {
 .button {
     border: none;
     padding: 10px;
-    background-color: var(--color-blue);
+    background-color: var(--color-primary);
     color: #ffffff;
 }
 
@@ -95,21 +114,17 @@ img {
 }
 
 main .container-large {
+    padding-top: 50px;
     margin-bottom: 50px;
     position: relative;
     top: 50px;
 }
 
 .bg-lightblue {
-    background-color: #B4D0E7;
-}
-
-.jumbotron {
-    display: flex;
+    background-color: var(--color-secondary);
 }
 
 .jumbotron-text {
-    flex-basis: 40%;
     padding-right: 25px;
 }
 
@@ -117,13 +132,9 @@ main .container-large {
     padding-bottom: 25px;
 }
 
-.cancel {
-    padding-top: 25px;
-}
-
 .arrow {
     font-size: 30px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .jumbotron-img {
@@ -132,13 +143,10 @@ main .container-large {
 
 /* griglia a 3 elementi */
 .grid-plan {
-    display: flex;
     justify-content: space-between;
-    padding: 35px 0;
 }
 
 .plan {
-    flex-basis: 30%;
     border: 1px solid #D3D3D6;
     font-size: 13px;
 }
@@ -147,7 +155,6 @@ main .container-large {
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid #D3D3D6;
-    font-size: 14px;
 }
 
 .plan-body {
@@ -156,7 +163,6 @@ main .container-large {
 
 .plan-body .text {
     color: #98979A;
-    font-size: 13px;
     padding: 10px 0;
 }
 
@@ -174,7 +180,6 @@ main .container-large {
 .plan-list i {
     position: absolute;
     left: -20px;
-    font-size: 13px;
 }
 
 .line {
@@ -185,49 +190,32 @@ main .container-large {
 
 .plan-large{
     border: 1px solid #D3D3D6;
-}
-
-.plan-large .plan-body {
-    display: flex;
     font-size: 13px;
 }
 
-.plan-body .description {
-    flex-basis: 70%;
-}
-
 .plan-body .contact {
-    flex-basis:30%;
     text-align: end;
 }
 
 /* sezione3 */
-.row {
-    display: flex;
-}
-
-.col-img {
-    flex-basis: 60%;
-}
-
 .col-text {
-    flex-basis: 40%;
     padding-top: 40px;
     padding-left: 30px;
     font-size: 13px;
 }
 
+.col-text h3 {
+    padding: 0;
+}
+
 /* sezione4 */
 .grid-card {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card {
-    flex-basis: 30%;
     font-size: 13px;
-    padding: 30px 0;
 }
 
 /* sezione6  */
@@ -246,14 +234,11 @@ main .container-large {
 
 /* footer */
 .container-footer {
-    width: 1100px;
-    margin: auto;
     color: #ffffff;
     padding: 50px;
 }
 
 .foot-row {
-    display: flex;
     justify-content: space-between;
     padding-bottom: 70px;
 }
