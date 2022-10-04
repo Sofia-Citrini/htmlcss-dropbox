@@ -84,7 +84,7 @@ h3 {
 .nav-link li {
     display: inline-block;
     list-style: none;
-    padding: 10px;
+    padding: 5px;
 }
 
 .nav-link a {
@@ -96,9 +96,28 @@ h3 {
 
 .button {
     border: none;
-    padding: 10px;
     background-color: var(--color-primary);
     color: #ffffff;
+    padding: 0 15px;
+}
+
+.btn-large {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.btn-large-white {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.btn-white {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color: transparent;
 }
 
 /* main */
@@ -174,12 +193,16 @@ main .container-large {
 .plan-list li {
     padding-bottom: 20px;
     position: relative;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .plan-list i {
     position: absolute;
     left: -20px;
+}
+
+.check-blue {
+    color: var(--color-primary);
 }
 
 .line {
