@@ -241,7 +241,7 @@ main .container-large {
     font-size: 13px;
 }
 
-/* sezione6  */
+/* sezione7  */
 .col-title {
     flex-basis: 50%;
 }
@@ -253,6 +253,28 @@ main .container-large {
 .col-button {
     flex-basis: 50%;
     text-align: end;
+}
+
+/* sezione8 */
+.question {
+    padding: 100px 0;
+}
+
+.question h2,
+.question-list div {
+    border-bottom: 1px solid #D3D3D6;
+}
+
+.question-list div{
+    position: relative;
+}
+
+.question-list i {
+    font-size: 11px;
+    position: absolute;
+    top:50%;
+    right:20px;
+    transform:translate(-50%, -50%);   
 }
 
 /* footer */
