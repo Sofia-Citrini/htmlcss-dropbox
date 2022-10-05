@@ -85,6 +85,7 @@ h3 {
     display: inline-block;
     list-style: none;
     padding: 5px 10px;
+    position: relative;
 }
 
 .nav-link a {
@@ -92,6 +93,34 @@ h3 {
     line-height: 18px;
     color: rgb(0, 0, 0);
     font-size: 14px;
+}
+
+.nav-link li:hover {
+    cursor: pointer;
+    background-color: #EEE9E2;
+    font-weight: bold;
+}
+
+.list-drop {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    min-width: 160px;
+    background-color: #EEE9E2;
+}
+
+.nav-link li:hover > .list-drop{
+    visibility: visible;
+    display: block;
+}
+
+.list-drop li {
+    list-style: none;
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    padding: 15px 10px;
 }
 
 .button {
