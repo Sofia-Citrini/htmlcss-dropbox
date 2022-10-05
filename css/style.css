@@ -78,13 +78,13 @@ h3 {
 
 .nav-logo {
     width: 100px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .nav-link li {
     display: inline-block;
     list-style: none;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 .nav-link a {
@@ -98,7 +98,7 @@ h3 {
     border: none;
     background-color: var(--color-primary);
     color: #ffffff;
-    padding: 0 15px;
+    padding: 5px 15px;
 }
 
 .btn-large {
