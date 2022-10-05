@@ -385,20 +385,31 @@ main .container-large {
 }
 
 .question h2,
-.question-list div {
+.question-list .accordion-title {
     border-bottom: 1px solid #D3D3D6;
 }
 
-.question-list div{
-    position: relative;
+.question-list .accordion-title{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .question-list i {
     font-size: 11px;
-    position: absolute;
-    top:50%;
-    right:20px;
-    transform:translate(-50%, -50%);   
+    padding-right: 30px;
+}
+
+.accordion-text{
+    font-size: 13px;
+    width: 80%;
+    flex-shrink: 0;
+    margin-right: auto;
+    display: none;
+}
+
+.question-list div:focus .accordion-text {
+    display: block;
 }
 
 /* footer */
