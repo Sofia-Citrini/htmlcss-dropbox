@@ -161,6 +161,27 @@ main .container-large {
 }
 
 /* griglia a 3 elementi */
+.input-text {
+    padding-right: 50px;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-circle{
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #D3D3D6;
+    display: inline-block;
+}
+
+.radio:checked + .radio-circle{
+    border: 3px solid var(--color-primary);
+}
+
 .grid-plan {
     justify-content: space-between;
 }
